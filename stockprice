@@ -1,0 +1,7 @@
+import yfinance as yf
+import matplotlib.pyplot as plt
+
+data = yf.download("AAPL MSFT TSLA", start='2021-01-01') 
+data['Close'].plot()
+
+plt.savefig('plot.png')
